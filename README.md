@@ -4,7 +4,7 @@
 
 With a low p-value of 5.35e-11, the null hypothesis can be rejected, which means that at least one of the independent variables has significant impact on the dependent variable (mpg).
 
-![Summary of Linear Regression Model]("Resources/mechacar_summary_lm.PNG")
+![Summary of Linear Regression Model](Resources/mechacar_summary_lm.PNG)
 
 In particular, the p-value of vehicle length and ground clearance are 2.60e-12 and 5.21e-08 respectively, which indicates that they provide non-random amount of variance to the mpg values in the data set. In other words, they have significant impact on mpg. Since the null hypothesis that the independent variables do not impact the dependent variable, the slope is not considered to be zero. Since the p-value of the intercept is significant, the significant features in this model (vehicle length and ground clearance) may need scaling or transforming to help improve the predictive power of the model. There could be other variables that can help explain the variability of mpg that have not been included in the model. Therefore, this linear model does not predict mpg of MechaCar prototypes effectively.
 
@@ -12,11 +12,11 @@ In particular, the p-value of vehicle length and ground clearance are 2.60e-12 a
 
 After summarizing the suspension coil's PSI metrics, it has a mean of 1498.78, median of 1500, variance of 62.29356, and standard deviation of 7.892627.
 
-![Suspension Coil PSI Total Summary]("Resources/suspension_coil_PSI_total_summary.PNG")
+![Suspension Coil PSI Total Summary](Resources/suspension_coil_PSI_total_summary.PNG)
 
 When the summarize() function is performed after grouping the PSI column by manufacturing lots using group_by(), the lot summary dataframe is as follows:
 
-![Suspension Coil PSI Lot Summary]("Resources/suspension_coil_PSI_lot_summary.PNG")
+![Suspension Coil PSI Lot Summary](Resources/suspension_coil_PSI_lot_summary.PNG)
 
 As the design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch, our total summary indicate that the suspension coils variance is 62.29, which meets the specification. However, when grouped by manufacturing lot, it is obvious that Lot3 does not meet the specification with a variance of 170.2861224.
 
